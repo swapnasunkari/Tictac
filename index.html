@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="games.css">
+    <script src="games.js"></script>
+</head>
+<body>
+    <h1><marquee direction="right" width="100%" scrollamount="15">TIC-TAC-TOE</marquee></h1>
+    <hr color="yellow">
+    <div class="messagesection" id="messagesection"> 
+        player one turn
+    </div>
+    <form id="myform">
+    <div class="gameboard">
+    <div class="row">
+        <div class="cols" onclick="display(this,0,0)"></div>
+        <div class="cols" onclick="display(this,0,1)"></div>
+        <div class="cols" onclick="display(this,0,2)"></div>
+    </div>
+    <div class="row">
+        <div class="cols" onclick="display(this,1,0)"></div>
+        <div class="cols" onclick="display(this,1,1)"></div>
+        <div class="cols" onclick="display(this,1,2)"></div>
+    </div>
+    <div class="row">
+        <div class="cols" onclick="display(this,2,0)"></div>
+        <div class="cols" onclick="display(this,2,1)"></div>
+        <div class="cols" onclick="display(this,2,2)"></div>
+    </div>
+    </div>
+    <button id="resetBtn">Restart</button>
+    </form>
+    </body>
+</html>
